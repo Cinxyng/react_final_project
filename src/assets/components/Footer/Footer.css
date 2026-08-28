@@ -1,0 +1,45 @@
+.footer-container 
+{
+  background-color: #ffd1dc;
+ 
+  background-image: 
+    linear-gradient(to right, rgba(255, 105, 180, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 105, 180, 0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+  
+  padding: 40px 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ff75b5;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #4a3b45;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ff75b5;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #9d88a1;
+}

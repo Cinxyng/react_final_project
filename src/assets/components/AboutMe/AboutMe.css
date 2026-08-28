@@ -1,0 +1,345 @@
+about-me-section
+{
+    background-color: #000000;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Card Container */
+.about-content {
+  max-width: 720px;
+  width: 100%;
+  background-color: #111111;
+  border-top: 1px solid #ff69b4;
+  border-bottom: 1px solid #ff69b4;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.25);
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Heading */
+.about-content h2 {
+  font-size: 2.3rem;
+  color: #ffffff !important;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Paragraph text */
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff !important;
+  margin: 0 0 35px 0;
+}
+
+/* Chinese Name Card */
+.chinese-name-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 28px;
+  border-radius: 16px;
+  align-self: stretch;
+}
+
+/* Ruby Character & Pronunciation Styling */
+.chinese-ruby {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 7.5rem;
+  font-weight: 700;
+  letter-spacing: 0.6rem;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255, 105, 180, 0.6);
+}
+
+.chinese-ruby rt {
+  writing-mode: vertical;
+  text-orientation: sideways;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #ff85c2;
+  letter-spacing: 0;
+  text-shadow: none;
+  text-align: center;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background-color: #ff69b4;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(255, 105, 180, 0.4);
+}
+
+.btn-primary:hover {
+  background-color: #e04a9e;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #1a1a1a;
+  color: #ffffff !important;
+  border: 1px solid #ff69b4;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 105, 180, 0.2);
+  transform: translateY(-2px);
+}
+
+/* FAVOURITE COLOUR SECTION */
+.fav-color-section {
+  display: block;
+  width: 100%;
+  background-color: #111111;
+  border-top: 1px solid rgba(255, 105, 180, 0.4);
+  border-bottom: 1px solid rgba(255, 105, 180, 0.4);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+  padding: 28px 32px;
+}
+
+.fav-color-label , .grab-label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ff85c2;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+}
+
+
+.colour-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.color-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.color-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 16px rgba(255, 105, 180, 0.45);
+  border-color: #ff69b4;
+}
+
+
+.color-block {
+  width: 225px;
+  height: 80px;
+  border-radius: 8px;
+  display: block;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.color-code {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+
+
+/* SKILLLSSSSSSSSSSSSSSSSSS*/
+.skills-grab-wrapper
+{
+  display:flex;
+  flex-direction: row;
+  padding: 28px 32px;
+}
+
+/* Container for positioning the rotated label */
+.vertical-label-container 
+{
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  
+  font-size: 6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  user-select: none;
+
+  letter-spacing: 0rem;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255, 105, 180, 0.6);
+}
+
+/* DRAGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG */
+.grab-section {
+  padding: 28px 32px;
+
+  display: flex;
+  flex-direction: column;
+
+  width:100%;
+}
+
+.grab-container {
+  position: relative; /* Required for Framer Motion boundary calculations */
+  overflow: hidden;
+
+  width:100%;
+  height: 100%;
+
+  min-height: 160px;
+
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px dashed rgba(255, 105, 180, 0.4);
+  border-radius: 12px;
+
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.grab-item {
+  padding: 12px 24px;
+  border: 1px solid rgba(255, 105, 180, 0.5);
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 600;
+
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.2s ease;
+}
+
+.grab-item:active {
+  cursor: grabbing;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4);
+}
+
+
+
+
+
+
+/* Tablets & Small Laptops (<= 992px) */
+@media (max-width: 992px) {
+  .about-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 28px;
+    margin-bottom: 3rem;
+  }
+
+  .about-content {
+    padding: 32px 24px;
+  }
+
+  .chinese-name-content {
+    min-width: unset;
+  }
+
+  .chinese-ruby {
+    font-size: 5.5rem;
+    letter-spacing: 0.4rem;
+    writing-mode: horizontal-tb;
+  }
+
+  .chinese-ruby rt {
+  padding-bottom: 8px; /* Adjust this value to increase or decrease the gap */
+  /* Or use margin: */
+  /* margin-bottom: 6px; */
+}
+}
+
+/* Mobile Devices (<= 600px) */
+@media (max-width: 600px) {
+  .about-me-section {
+    padding: 24px 14px;
+  }
+
+  .about-content {
+    padding: 24px 18px;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 14px;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .fav-color-section {
+    padding: 20px 16px;
+  }
+
+  .colour-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .color-block {
+    height: 50px;
+  }
+}
