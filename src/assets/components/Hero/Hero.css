@@ -316,3 +316,12 @@ background:
   color: #ffffff;
   transform: translateY(-2px);
 }
+
+@media (max-width: 600px)
+{
+  
+.home-header {
+  justify-content: center;
+}
+
+}

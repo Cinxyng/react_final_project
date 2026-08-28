@@ -61,10 +61,10 @@ const Hero = () => {
         </div>
 
         <div className="status-box">
-          <p><strong>Class:</strong> Tech Trainee / Sleeper</p>
-          <p><strong>Passive Skill:</strong> Can sleep through 5 consecutive alarms</p>
-          <p><strong>Special Ability:</strong> Turning caffeine into creative ideas</p>
-          <p><strong>Current Quest:</strong> Building cool stuff and surviving the grind</p>
+          <p><strong>Current Level:</strong> 21 </p>
+          <p><strong>Sanity Bar:</strong> [░░░░░░░░░░] 2% (Critical Warning)</p>
+          <p><strong>Passive Skill:</strong> Works fine on my local machine</p>
+          <p><strong>Current Boss:</strong> Red lines in VS Code that vanish when I re-type nothing</p>
         </div>
 
         <div className='intro-button-container'>
