@@ -20,7 +20,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter basename="/react_final_project">
+    <BrowserRouter>
     <ScrollToTop />
       <Header />
       <Routes>
